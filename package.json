@@ -1,0 +1,23 @@
+{
+  "name": "node-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "bson": "^0.4.23",
+    "express": "^4.13.4",
+    "mongodb": "^2.1.16",
+    "morgan": "^1.7.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-jshint": "^2.0.0",
+    "jshint": "^2.9.1"
+  }
+}
