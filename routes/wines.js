@@ -1,10 +1,11 @@
-var express = require('express'), 
+var express = require('express'),
+    passport = require('passport'), 
     mongo = require('mongodb'), 
     router = express.Router();
 
 var db = require('../db');
 
-router.get('/', function(req, res) {
+router.get('/', passport.authenticate('jwt', { session: false }), function(req, res) {
     var collection = db.get().collection('wines');
 
     collection.find().toArray(function(err, docs) {

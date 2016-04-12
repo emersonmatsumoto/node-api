@@ -23,3 +23,6 @@ delete /wines - deleta registro
     "description": "A resurgence of interest in boutique vineyards...",
     "picture": "lan_rioja.jpg"
 }
+
+
+http://slatepeak.com/guides/building-a-software-as-a-service-saas-startup-pt-2/
