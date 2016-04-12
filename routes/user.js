@@ -1,6 +1,5 @@
-var config = require('./config/main'), 
+var config = require('../config/main'), 
     express = require('express'), 
-    mongo = require('mongodb'), 
     router = express.Router(),
     jwt = require('jsonwebtoken'),
     User = require('../app/models/user');
@@ -28,7 +27,9 @@ router.post('/register', function(req, res) {
 // Authenticate the user and get a JSON Web Token to include in the header of future requests.
 router.post('/authenticate', function(req, res) {
     User.findOne({ email: req.body.email }, function(err, user) {
-        if (err) throw err;
+        if (err) {
+            throw err;            
+        }
 
         if (!user) {
             res.send({ success: false, message: 'Authentication failed. User not found.' });
@@ -48,3 +49,5 @@ router.post('/authenticate', function(req, res) {
         }
     });
 });
+
+module.exports = router;

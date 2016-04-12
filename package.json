@@ -9,13 +9,16 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^0.8.5",
     "body-parser": "^1.15.0",
     "bson": "^0.4.23",
     "express": "^4.13.4",
+    "jsonwebtoken": "^5.7.0",
     "mongodb": "^2.1.16",
     "mongoose": "^4.4.12",
     "morgan": "^1.7.0",
-    "passport": "^0.3.2"
+    "passport": "^0.3.2",
+    "passport-jwt": "^2.0.0"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
